@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana JavaScript Kenzie</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="container">
-    <h1>Calcule seu IMC</h1>
-    <form>
-        <div class="container-calculadora-peso">
+        <h1>Calcule seu IMC</h1>
+        <form>
             <p>Digite seu peso  </p>
-            <input class="peso-slider" type="range">
-            <p>Peso</p>
-            <input class="input-number" type="number">
-        </div>
-        <div class="container-calculadora-altura">
-            Digite sua alura
-            <input class="altura-slider" type="range">
-            <p>Altura</p>
-            <input class="input-number" type="number">
-        </div>
-        <input class="botao-calcular" type="button" value="Calcular">
-    </form>
+            <div>
+                <input id="peso" class="input-number" type="number">
+                <span>Kg</span>
+            </div>
+            <div>
+                <p>Digite sua alura</p>
+                <input id="altura" class="input-number" type="number">
+                <span>Cm</span>
+            </div>
+            <div>
+                <input id="btnCalcular" class="botao-calcular" type="button" value="Calcular">
+            </div>
+        </form>
+        <div id="resultado"></div>
     </div>
 </body>
 </html>
